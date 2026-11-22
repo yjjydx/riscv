@@ -1,0 +1,5 @@
+// CPU+SRAM block-level DRC selection.
+// The 145 CSR.R.1:* checks are full-chip corner EMPTY_AREA checks.
+// Keep all non-CSR checks enabled.
+GROUP CPU26_BLOCK_CSR_EXCLUDE "CSR.R.1:?"
+DRC UNSELECT CHECK CPU26_BLOCK_CSR_EXCLUDE
